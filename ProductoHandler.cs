@@ -79,7 +79,7 @@ namespace ProyectoFinal
                                PrecioVenta = @PrecioVenta,
                                Stock = @Stock,
                                IdUsuario = @IdUsuario
-                              WHERE Id = Id";
+                              WHERE Id = @Id";
 
                 connection.Open();
 
