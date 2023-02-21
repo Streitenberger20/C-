@@ -7,7 +7,7 @@ namespace ProyectoFinal.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [HttpPut("api/Usuario")]
+        [HttpPut]
         public void actualizarUsuario( Usuario usuario)
         {
             UsuarioHandler.modificarUsuario(usuario);
