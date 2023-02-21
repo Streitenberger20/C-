@@ -9,7 +9,7 @@ namespace ProyectoFinal.Controllers
     public class ProductoController : ControllerBase
     {
 
-        [HttpPost("/Producto")]
+        [HttpPost]
         public void nuevoProducto(Producto producto)
         {
             ProductoHandler.crearProducto(producto);
