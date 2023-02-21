@@ -60,6 +60,7 @@ namespace ProyectoFinal
                     command.Parameters.Add(new SqlParameter("PrecioVenta", SqlDbType.Money) { Value = producto.PrecioVenta});
                     command.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int) { Value = producto.Stock });
                     command.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt) { Value = producto.IdUsuario });
+                    command.ExecuteNonQuery();
             }
                 connection.Close();
 
