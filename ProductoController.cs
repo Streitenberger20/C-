@@ -13,6 +13,18 @@ namespace ProyectoFinal.Controllers
         public void nuevoProducto(Producto producto)
         {
             ProductoHandler.crearProducto(producto);
-        } 
+        }
+
+        [HttpPut]
+        public void actualizarProducto(Producto producto)
+        {
+            ProductoHandler.modificarProducto(producto);
+        }
+
+        [HttpDelete]
+        public void borrarProducto(long idProd)
+        {
+            ProductoHandler.eliminarProducto(idProd);
+        }
     }
 }
