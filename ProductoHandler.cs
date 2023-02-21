@@ -51,7 +51,7 @@ namespace ProyectoFinal
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 var query = @"INSERT INTO Producto (Descripciones, Costo, PrecioVenta, Stock, IdUsuario) 
-                            VALUES(@Descripciones, @Costo, @PrecioVenta, @Stock, @IdUsuario ) select @@IDENTITY"; 
+                            VALUES(@Descripciones, @Costo, @PrecioVenta, @Stock, @IdUsuario )"; 
                 connection.Open();
 
                 using (SqlCommand command = new SqlCommand(query, connection)) {
